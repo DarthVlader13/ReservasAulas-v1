@@ -83,7 +83,7 @@ public class Consola {
 
 	//CREAMOS MÉTODO LEERTRAMO
 	public static Tramo leerTramo() {
-		System.out.println("Eliga un tramo horio (mañana o tarde): ");
+		System.out.println("Eliga un tramo horio (1 para mañana o 2 para tarde): ");
 		int indice = Entrada.entero();
 		switch (indice) {
 		case 1:
