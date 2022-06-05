@@ -8,9 +8,8 @@ public class Aula {
 	private String nombre;
 
 	// CONSTRUCTOR CON PARAMETROS
-	public Aula(String nombre) {
-		super();
-		this.nombre = nombre;
+	public Aula (String nombre){
+		setNombre(nombre);
 	}
 
 	// GENERAMOS GETTER Y SETTER
@@ -25,23 +24,21 @@ public class Aula {
 	 * @param nombre the nombre to set
 	 */
 	private void setNombre(String nombre) {
-		if (nombre == null) {
+		if (nombre==null) {
 			throw new NullPointerException("ERROR: El nombre del aula no puede ser nulo.");
-		} else if (nombre.isEmpty()) {
-			throw new IllegalArgumentException("ERROR: El nombre del aula no puede estar vacío.");
-		} else {
-			this.nombre = nombre;
 		}
-
+		else if (nombre.isBlank()) {
+			throw new IllegalArgumentException("ERROR: El nombre del aula no puede estar vacío.");
+		}
+			this.nombre = nombre;
 	}
 
 	// CONSTRUCTOR COPIA
-	public Aula(Aula otraAula) {
-		if (otraAula == null) {
+	public Aula (Aula a) {
+		if (a==null) {
 			throw new NullPointerException("ERROR: No se puede copiar un aula nula.");
-		} else {
-			setNombre(otraAula.getNombre());
 		}
+		setNombre(a.getNombre());
 	}
 
 	// GENERAMOS METODOS HASDHCODE Y EQUALS

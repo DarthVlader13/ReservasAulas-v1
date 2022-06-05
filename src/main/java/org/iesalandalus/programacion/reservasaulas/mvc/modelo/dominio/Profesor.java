@@ -32,7 +32,7 @@ public class Profesor {
 		} else if (nombre.isBlank()) {
 			throw new IllegalArgumentException("ERROR: El nombre del profesor no puede estar vacío.");
 		}
-		this.nombre = nombre;
+		this.nombre = formateaNombre(nombre);
 	}
 
 	

@@ -50,6 +50,7 @@ public class Vista {
 	// CREAMOS MÉTODO SALIR
 	public void salir() {
 		System.out.println("¡Hasta la próxima!");
+		controlador.terminar();
 	}
 
 	// CREAMOS MÉTODO INSERTARAULA

@@ -11,7 +11,7 @@ import org.iesalandalus.programacion.reservasaulas.mvc.modelo.dominio.Profesor;
 public class Profesores {
 
 	// DECLARACIÓN DE ATRIBUTOS
-	List<Profesor> coleccionProfesores;
+	private List<Profesor> coleccionProfesores;
 
 	// CREAMOS MÉTODO GETPROFESORES
 	public List<Profesor> getProfesores() {

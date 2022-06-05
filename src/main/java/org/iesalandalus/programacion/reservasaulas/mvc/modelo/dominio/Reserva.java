@@ -100,7 +100,7 @@ public class Reserva {
 	// GENERAMOS METODO TOSTRING
 	@Override
 	public String toString() {
-		return "Reserva [profesor=" + profesor + ", aula=" + aula + ", permanencia=" + permanencia + "]";
+		return "Profesor=" + profesor.toString() + ", aula=" + aula.toString() + ", permanencia=" + permanencia.toString();
 	}
 
 }
